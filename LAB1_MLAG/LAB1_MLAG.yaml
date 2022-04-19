@@ -1,0 +1,112 @@
+name: LAB1_MLAG
+prefix: ""
+mgmt:
+  network: LAB1_MLAG
+  ipv4_subnet: 172.100.100.0/24
+  ipv4-gw: 172.100.100.250
+  external-access: true
+topology:
+  kinds:
+    ceos:
+      image: ceos64-lab:4.27.1.1F
+    client:
+      image: ceos64-lab:4.27.1.1F
+    linux:
+      image: ghcr.io/hellt/network-multitool:latest
+  nodes:
+    SPINE-1:
+      kind: ceos
+      group: tier-2
+      startup-config: ./LAB1_MLAG/LAB1_MLAG_SPINE-1.cfg
+      mgmt_ipv4: 172.100.100.10
+    SPINE-2:
+      kind: ceos
+      group: tier-2
+      startup-config: ./LAB1_MLAG/LAB1_MLAG_SPINE-2.cfg
+      mgmt_ipv4: 172.100.100.11
+    LEAF-1:
+      kind: ceos
+      group: tier-1
+      startup-config: ./LAB1_MLAG/LAB1_MLAG_LEAF-1.cfg
+      mgmt_ipv4: 172.100.100.12
+    LEAF-2:
+      kind: ceos
+      group: tier-1
+      startup-config: ./LAB1_MLAG/LAB1_MLAG_LEAF-2.cfg
+      mgmt_ipv4: 172.100.100.13
+    LEAF-3:
+      kind: ceos
+      group: tier-1
+      startup-config: ./LAB1_MLAG/LAB1_MLAG_LEAF-3.cfg
+      mgmt_ipv4: 172.100.100.14
+    LEAF-4:
+      kind: ceos
+      group: tier-1
+      startup-config: ./LAB1_MLAG/LAB1_MLAG_LEAF-4.cfg
+      mgmt_ipv4: 172.100.100.15
+# clients
+    CLIENT-1:
+      kind: ceos
+      startup-config: ./LAB1_MLAG/LAB1_MLAG_CLIENT-1.cfg
+    CLIENT-2:
+      kind: ceos
+      startup-config: ./LAB1_MLAG/LAB1_MLAG_CLIENT-2.cfg
+  links:
+  - endpoints:
+    - LEAF-1:eth1
+    - SPINE-1:eth1
+  - endpoints:
+    - LEAF-1:eth2
+    - SPINE-2:eth1
+  - endpoints:
+    - LEAF-2:eth1
+    - SPINE-1:eth2
+  - endpoints:
+    - LEAF-2:eth2
+    - SPINE-2:eth2
+  - endpoints:
+    - LEAF-3:eth1
+    - SPINE-1:eth3
+  - endpoints:
+    - LEAF-3:eth2
+    - SPINE-2:eth3
+  - endpoints:
+    - LEAF-4:eth1
+    - SPINE-1:eth4
+  - endpoints:
+    - LEAF-4:eth2
+    - SPINE-2:eth4
+  # MLAGs links
+  - endpoints:
+    - LEAF-1:eth5
+    - LEAF-2:eth5
+  - endpoints:
+    - LEAF-1:eth6
+    - LEAF-2:eth6
+  - endpoints:
+    - LEAF-3:eth5
+    - LEAF-4:eth5
+  - endpoints:
+    - LEAF-3:eth6
+    - LEAF-4:eth6
+  - endpoints:
+    - SPINE-1:eth5
+    - SPINE-2:eth5
+  - endpoints:
+    - SPINE-1:eth6
+    - SPINE-2:eth6
+# Clients links
+  - endpoints:
+    - LEAF-1:eth3
+    - CLIENT-1:eth1
+  - endpoints:
+    - LEAF-2:eth3
+    - CLIENT-1:eth2
+  - endpoints:
+    - LEAF-3:eth4
+    - CLIENT-2:eth1
+  - endpoints:
+    - LEAF-4:eth4
+    - CLIENT-2:eth2
+configpath: ""
+
