@@ -226,15 +226,15 @@ def mainmenu():
    try: 
       if user_input.lower() == "01":
          labsmenu("MLAG")
-      elif user_input.lower() == "02":
+      elif user_input.lower() == "02_02":
          labsmenu("LS")
-      elif user_input.lower() == "03":
+      elif user_input.lower() == "03_03":
          labsmenu("VxLAN")
-      elif user_input.lower() == "04":
+      elif user_input.lower() == "04_04":
          labsmenu("EVPNL2")
-      elif user_input.lower() == "05":
+      elif user_input.lower() == "05_05":
          labsmenu("EVPNL3")
-      elif user_input.lower() == "06":
+      elif user_input.lower() == "06_06":
          labsmenu("gRPC")
       elif user_input.lower() == "99":
          go_to_exit()
