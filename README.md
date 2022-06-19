@@ -16,11 +16,11 @@ Aplikacja występuje w postacji kontenera do pobrania z oficjalnego publicznego 
 klonujemy repozytorium `git clone https://github.com/marekplaza/apiuslab.git`, przechodzimy do katalogu `cd apiuslab/` i uruchamiamy poleceniem:
 
 ```bash
- sudo docker run --rm -it --privileged \
+    sudo docker run --rm -it --privileged \
  --network host \
  -v /var/run/docker.sock:/var/run/docker.sock \
  -v /var/run/netns:/var/run/netns \
- -v /etc/hosts:/etc/hosts 
+ -v /etc/hosts:/etc/hosts \
  --pid="host" \
  -v $(pwd):$(pwd) \
  -w $(pwd)  \
@@ -31,7 +31,6 @@ klonujemy repozytorium `git clone https://github.com/marekplaza/apiuslab.git`, p
 W wyniku czego powinniśmy otrzymać konsolę ułatwiającą nasze labowanie:
 
 ```bash
-                                                                                                              
   Status LAB'a: 
 +---+-------------------------------------------+-----------+----------+--------------+---------------------------------+------+---------+-------------------+--------------+
 | # |                 Topo Path                 | Lab Name  |   Name   | Container ID |              Image              | Kind |  State  |   IPv4 Address    | IPv6 Address |
