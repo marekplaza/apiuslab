@@ -16,7 +16,7 @@ Aplikacja występuje w postacji kontenera do pobrania z oficjalnego publicznego 
 klonujemy repozytorium `git clone https://github.com/marekplaza/apiuslab.git`, przechodzimy do katalogu `cd apiuslab/` i uruchamiamy poleceniem:
 
 ```bash
-    sudo docker run --rm -it --privileged \
+ sudo docker run --rm -it --privileged \
  --network host \
  -v /var/run/docker.sock:/var/run/docker.sock \
  -v /var/run/netns:/var/run/netns \
@@ -32,26 +32,6 @@ W wyniku czego powinniśmy otrzymać konsolę ułatwiającą nasze labowanie:
 
 ```bash
                                                                                                               
-          ..         ...                                                                                  
-        :!77!.      ~77!^                                                                                 
-      .~7777~       :!777!:                                                                               
-     :!777!:  ^!!~.  .~7777^                                                                              
-   .~7777^  .!777~. .. :!777!:                                   .^~:                                     
-  .7?777:  :7777^ .!77~ .!777?^                                  5&&#7                                    
-  .~777!~. .~777~. ^!~: ^!777!.                                  !5PY^                                    
-    :!7!7!:  :!77!.   .~7!!!^    .^!777~:.~^~:  :~~^.:~777!:     .^^^  .^~~:     .^~~:   .^!777~^         
-      ^!!!7~. .^^:   ^!!!7~.   .JG#&###&#G##&?  5###G#&##&&#P7   ?&##^ :###Y     :###Y  ?G##BB#&#G7       
-       .~777!.      ~777!:    :G##G7^:^!5####?  5###BJ~::~JB##5. ?###^ :###Y     :###Y !&##J...7P5Y^      
-         ^~~^       :~~^.     5&#B:      ?###?  5###~      ~##&? ?###^ :###Y     :B##Y :G###G5Y?7^        
-                              5##G.      7###?  5###^      ^##&? ?###^ :###Y     ~###Y   ~?YPGB###G^      
-                              ~###5~...:?B###?  5###G!:..:!G##G: ?###^ .B##B7:.:!G###Y ~?JJ^  .7##&Y      
-                               ^5#&&BBB#&###&?  5####&#BB#&&BY:  ?&##^  ~G#&&#B#&B##&Y !B&&#GPPB##P:      
-                                 :7JYYJ?~^777^  5##B~!?YYY?!:    ^777.   .~?JYY?!:777~  .~7JYYYJ7^        
-                                                5##B:                                                     
-                                                5&#B:                        T E C H N O L O G I E S      
-                                                ?P55.                                                     
-                                                                                                        
-
   Status LAB'a: 
 +---+-------------------------------------------+-----------+----------+--------------+---------------------------------+------+---------+-------------------+--------------+
 | # |                 Topo Path                 | Lab Name  |   Name   | Container ID |              Image              | Kind |  State  |   IPv4 Address    | IPv6 Address |
