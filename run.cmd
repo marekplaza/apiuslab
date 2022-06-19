@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "start"
 sudo snap install docker
-sleep5
+sleep 5
 sudo docker pull marekplaza/apiuslab:2022SSH2
 sudo docker pull marekplaza/ceos64-lab:4.27.1.1F
 sudo docker tag marekplaza/ceos64-lab:4.27.1.1F ceos64-lab:4.27.1.1F
