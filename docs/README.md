@@ -1,5 +1,5 @@
 # Witaj w ApiusLAB  
-![apiuslab](https://marekplaza.github.io/apiuslab/apiuslab.png)[width=100] 
+![apiuslab](https://marekplaza.github.io/apiuslab/apiuslab.png)
 🐳 + 🧪 
 Wszystkie przykłady na tej stronie możesz wykonać w oparciu o skontenryzowany obraz systemu operacyjengo EOS (cEOS) oraz narzędzie containerlab [containerlab.dev](https://containerlab.dev). 
 
