@@ -1,7 +1,7 @@
 # Witaj w ApiusLAB  
 ![apiuslab](https://marekplaza.github.io/apiuslab/apiuslab.png)
 🐳 + 🧪 
-Wszystkie przykłady na tej stronie możesz wykonać w oparciu o skontenryzowany obraz systemu operacyjengo EOS (cEOS) oraz narzędzie containerlab [containerlab.dev](https://containerlab.dev). 
+ApiusLAB to aplikacja do przyjaznego wykonywania szkoleń i prezentacji technologii sieciowych Arista Networks w oparciu o skontenryzowany obraz systemu operacyjengo EOS (cEOS) oraz narzędzie containerlab [containerlab.dev](https://containerlab.dev). 
 
 <br>Przygotowaliśmy dla Ciebie kilka ciekawych LABów bazujących na rozwiązaniach Arista Networks, m.in.: MLAG, L&S, EVPN i telemetria. Życzymy udanej przygody z kontenerami i technologiami sieciowymi.
 
