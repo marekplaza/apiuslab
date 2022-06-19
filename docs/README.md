@@ -16,7 +16,7 @@ Aplikacja występuje w postacji kontenera do pobrania z oficjalnego publicznego 
 klonujemy repozytorium `git clone https://github.com/marekplaza/apiuslab.git`, przechodzimy do katalogu `cd apiuslab/` i uruchamiamy poleceniem:
 
 ```bash
-    sudo docker run --rm -it --privileged     --network host     -v /var/run/docker.sock:/var/run/docker.sock     -v /var/run/netns:/var/run/netns     -v /etc/hosts:/etc/hosts     --pid="host"     -v $(pwd):$(pwd)     -w $(pwd)  marekplaza/apiuslab:2022SSH
+    sudo docker run --rm -it --privileged --network host -v /var/run/docker.sock:/var/run/docker.sock -v /var/run/netns:/var/run/netns -v /etc/hosts:/etc/hosts --pid="host" -v $(pwd):$(pwd) -w $(pwd)  marekplaza/apiuslab:2022SSH
 
 ```
 
