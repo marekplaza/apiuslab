@@ -6,7 +6,7 @@ Wszystkie przykłady na tej stronie możesz wykonać w oparciu o skontenryzowany
 <br>Przygotowaliśmy dla Ciebie kilka ciekawych LABów bazujących na rozwiązaniach Arista Networks, m.in.: MLAG, L&S, EVPN i telemetria. Życzymy udanej przygody z kontenerami i technologiami sieciowymi.
 
     
-### Więcej informacji znajdziesz
+## Więcej informacji znajdziesz
 Arista Networks [arista.com](https://arista.com) <br/>
 Apius Technologies [apius.pl](https://apius.pl)   
 
