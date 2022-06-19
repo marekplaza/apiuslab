@@ -8,9 +8,9 @@ mgmt:
 topology:
   kinds:
     ceos:
-      image: ceos64-lab:4.27.1.1F
+      image: marekplaza/ceos64-lab:4.27.1.1F
     client:
-      image: ceos64-lab:4.27.1.1F
+      image: marekplaza/ceos64-lab:4.27.1.1F
     linux:
       image: ghcr.io/hellt/network-multitool:latest
   nodes:
