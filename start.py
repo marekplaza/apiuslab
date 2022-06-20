@@ -65,7 +65,7 @@ def clearscreen():
 
 def header():
    zestaw = "🐳 🧪= 🚀 😍 👍 💻 ✔️"
-   print("   Witaj w %s ApiusLAB  🐳 🧪 \n" % (s))
+   print("   Witaj w %s ApiusLAB  🐳 🧪  \n" % (s))
    #print(bcolors.WARNING + "Warning: No active frommets remain. Continue?" + bcolors.ENDC)
    logo()
 
