@@ -40,7 +40,7 @@ topology:
     LEAF-4:
       kind: ceos
       group: tier-1
-      startup-config: ./LAB1_MLAG/LAB1_MLAG_LEAF-4.cfg
+      startup-config: ./LAB1_MLAG/LAB1_MLAG_LEAF-4_BASE.cfg
       mgmt_ipv4: 172.100.100.15
 # clients
     CLIENT-1:
